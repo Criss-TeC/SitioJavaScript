@@ -6,19 +6,20 @@
     <title>HOME</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/assets/css/style.css">
-    <script src="/assets/js/main.js"></script>
 </head>
-<body class="bg-gray-150 text-gray-800 ">
+<body class="bg-gray-150 text-gray-800">
     <header class="bg-blue-500 text-white p-4">
         <h1 class="text-xl">HOME</h1>
     </header>
     <main class="p-8">
         <section>
             <h2 class="text-2xl font-bold mb-4">Bienvenidos</h2>
+            
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                  Necessitatibus dicta suscipit, omnis velit soluta, porro, 
                  ipsam corrupti quas architecto at quam consectetur ad non eaque 
                  odio perspiciatis enim dolor ea.</p>
+
         </section>
         <form class="bg-white shadow-md rounded-xl px-8 pt-6 pb-8 mb-4">
             <div class="mb-4">
@@ -29,7 +30,22 @@
                 <button class="bg-blue-500 p-2 text-white font-bold rounded-xl hover:bg-blue-700 w-full" onclick="saludar()">Soy un boton</button>
             </div>
         </form>
+        <form class="bg-white shadow-md rounded-xl px-8 pt-6 pb-8 mb-4">
+            <div class="mb-4">
+                <input type="text" name="valor1" id="valur1" placeholder="Ingrese valor 1" class="shadow border rounded-xl w-full px-2 py-3 text-gray-700 focus:shadow-outline">
+            </div>
+            <div class="mb-4">
+                <input type="text" name="valor2" id="valor2" placeholder="Ingrese valor 2" class="shadow border rounded-xl w-full px-2 py-3 text-gray-700 focus:shadow-outline">
+            </div>
+            <div class="mb-4">
+                <button id="boton_sumar" class="bg-blue-500 p-2 text-white font-bold rounded-xl hover:bg-blue-700 w-full">Sumar</button>
+            </div>
+            <div id="resultado_suma" class="mb-4">
+                aqui mostraremos el resultado de la suma.
+            </div>
+        </form>
     </main>
     <footer class="bg-blue-500 text-white p-4 text-center">Todos los derechos reservados 2024.</footer>
 </body>
 </html>
+    <script src="/assets/js/main.js"></script>
