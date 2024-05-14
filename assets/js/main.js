@@ -3,6 +3,7 @@ function saludar() {
   //def variable
   debugger;
   var nombre = document.getElementById("username");
+  console.log(`Hola mi nombre es ${nombre}`);
 }
 
 // Ejemplos js
@@ -159,7 +160,20 @@ let botonSumar = document.getElementById("boton_sumar");
 
 console.log(botonSumar);
 
-botonSumar.addEventListener('click', (event) => {
+botonSumar.addEventListener("click", (event) => {
   event.preventDefault();
-  console.log('Hice Click!!!')
+  console.log("Hice Click!!!");
+  // recuperar valor 1
+  // recuperar valor 2
+
+  let valor1 = document.getElementById("valor1").value;
+  let valor2 = document.getElementById("valor2").value;
+
+  // suamr los valores como numeros
+  let result = +valor1 + +valor2;
+  console.log(result);
+  // mostrar el resultado de la suma
+
+  let divResultado = document.getElementById("resultado_suma");
+  divResultado.innerHTML = `El resultado de la suma ${result}.`;
 });
